@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,700&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 7rem;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  background-color: $color-grey-light-2;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+.u-margin-left {
+  margin-left: 7rem !important;
+}
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
+.u-margin-top-big {
+  margin-top: 10rem !important;
+}
+.u-margin-top-huge {
+  margin-top: 25rem !important;
+}
+
+.heading--primary {
+  font-family: "Fraunces", serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-grey-light-2;
+  letter-spacing: 0.8rem;
+  word-spacing: 1.7rem;
+  text-align: center;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  text-shadow: 0 1.1rem 2.1rem rgba(0, 0, 0, 0.2);
+}
+
+.heading--secondary {
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-grey-dark-3;
+  letter-spacing: 0.16rem;
+}
+.heading--tertiary {
+  font-family: "Fraunces", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-grey-dark-3;
+  letter-spacing: 0.16rem;
+}
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: $color-grey-dark-4;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-grey-light-1;
+}
+
+.fixed {
+  background-color: $color-tertiary-dark;
+  color: $color-grey-dark-4;
+}

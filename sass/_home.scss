@@ -1,0 +1,151 @@
+.header {
+  &__logo {
+    display: inline-block;
+    height: 5rem;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    animation: animate 0.8s infinite;
+  }
+}
+.nav {
+  height: 27rem;
+}
+.features {
+  &__item {
+    min-height: 40rem;
+    &--1 {
+      background-image: linear-gradient(
+        to right,
+        $color-grey-light-1,
+        $color-grey-light-2
+      );
+      background-size: cover;
+      background-position: center;
+    }
+    &--2 {
+      background-image: url(../img/image-transform-large.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &--3 {
+      background-image: url(../img/image-stand-out-large.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &--4 {
+      background-image: linear-gradient(
+        to right,
+        $color-grey-light-1,
+        $color-grey-light-2
+      );
+      background-size: cover;
+      background-position: center;
+    }
+    &--5 {
+      background-image: url(../img/image-graphic-design-large.jpg);
+      background-size: cover;
+      padding: 3rem 20%;
+      text-align: center;
+      background-position: center;
+    }
+    &--6 {
+      background-image: url(../img/image-photography-large.jpg);
+      background-size: cover;
+      padding: 3rem 20%;
+      text-align: center;
+      background-position: center;
+    }
+  }
+}
+
+.testimonials {
+  &__heading {
+    font-family: "Fraunces", serif;
+    font-size: 3.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-grey-dark-4;
+    letter-spacing: 0.5rem;
+    word-spacing: 1.2rem;
+    text-align: center;
+    margin: 5rem 0;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.preview {
+  height: 30rem;
+
+  &--1 {
+    background-image: url(../img/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  &--2 {
+    background-image: url(../img/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  &--3 {
+    background-image: url(../img/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  &--4 {
+    background-image: url(../img/image-gallery-sugar-cubes.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.footer {
+  &__heading {
+    font-family: "Fraunces", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: $color-grey-dark-4;
+  }
+  &__items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:not(:last-child) {
+      padding-bottom: 5rem;
+    }
+  }
+  &__item {
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: $color-tertiary-dark;
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: $color-grey-light-2;
+    }
+  }
+
+  &__icon {
+    filter: invert(0%) sepia(0%) saturate(45%) hue-rotate(303deg)
+      brightness(114%) contrast(100%);
+    &:hover {
+      filter: invert(100%) sepia(0%) saturate(2245%) hue-rotate(303deg)
+        brightness(114%) contrast(100%);
+    }
+  }
+}

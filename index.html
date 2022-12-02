@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/index.js"></script>
+    <title>Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <!-- Navigation -->
+      <div class="nav">
+        <nav class="navbar">
+          <a href="#" class="navbar__logo">
+            <img
+              src="./img/logo.svg"
+              alt="navigation logo"
+              class="navbar__image"
+            />
+          </a>
+          <ul class="navbar__items navigation">
+            <li class="navbar__item">
+              <a href="#testimonials" class="navbar__link"> About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#features" class="navbar__link"> Services</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#previews" class="navbar__link"> Projects</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#footer" class="navbar__link"> Contact</a>
+            </li>
+          </ul>
+          <div class="navbar__toggle">
+            <input
+              type="checkbox"
+              id="toggle"
+              class="navbar__toggle--checkbox"
+            />
+            <label for="toggle" class="navbar__toggle--label"
+              ><span class="navbar__toggle--span">&nbsp;</span></label
+            >
+          </div>
+        </nav>
+      </div>
+      <h1 class="heading--primary">We are Creatives</h1>
+      <img
+        src="./img/icon/icon-arrow-down.svg"
+        alt="arrow down"
+        class="header__logo"
+      />
+    </header>
+
+    <section id="features" class="features">
+      <div class="features__item features__item--1">
+        <h2 class="heading--secondary u-margin-left u-margin-top-big">
+          Transform your brand
+        </h2>
+        <p class="paragraph paragraph--1 u-margin-left u-margin-top-small">
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <a href="#" class="btn--text u-margin-left u-margin-top-small"
+          >Learn more</a
+        >
+      </div>
+      <div class="features__item features__item--2"></div>
+      <div class="features__item features__item--3"></div>
+      <div class="features__item features__item--4">
+        <h2 class="heading--secondary u-margin-left u-margin-top-big">
+          Stand out to the right audience
+        </h2>
+        <p class="paragraph paragraph--2 u-margin-left u-margin-top-small">
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we'll build and extend
+          your brand in digital places.
+        </p>
+        <a href="#" class="btn--text u-margin-left u-margin-top-small"
+          >Learn more</a
+        >
+      </div>
+      <div class="features__item features__item--5">
+        <h3 class="heading--tertiary u-margin-top-huge">Graphic design</h3>
+        <p class="paragraph paragraph--3 u-margin-top-small">
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential client's attention.
+        </p>
+      </div>
+      <div class="features__item features__item--6">
+        <h3 class="heading--tertiary u-margin-top-huge">Photography</h3>
+        <p class="paragraph paragraph--4 u-margin-top-small">
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <h1 class="testimonials__heading">Client Testimonials</h1>
+      <div class="testimonials__container">
+        <!-- Testimonial 01 -->
+        <div class="testimonial">
+          <img
+            src="./img/image-emily.jpg"
+            alt="Emily R."
+            class="testimonial__image u-margin-bottom-medium"
+          />
+          <p class="testimonial__description u-margin-bottom-small">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="testimonial__author">
+            <p class="testimonial__author--name">Emily R.</p>
+            <p class="testimonial__author--designation">Marketing Director</p>
+          </div>
+        </div>
+        <!-- Testimonial 02 -->
+        <div class="testimonial">
+          <img
+            src="./img/image-thomas.jpg"
+            alt="Thomas S."
+            class="testimonial__image u-margin-bottom-medium"
+          />
+          <p class="testimonial__description u-margin-bottom-small">
+            Sunnyside's enthusiasm coupled with their keen interest in our
+            brand's success made it a satisfying and enjoyable experience.
+          </p>
+          <div class="testimonial__author">
+            <p class="testimonial__author--name">Thomas S.</p>
+            <p class="testimonial__author--designation">
+              Chief Operating Officer
+            </p>
+          </div>
+        </div>
+        <!-- Testimonial 03 -->
+        <div class="testimonial">
+          <img
+            src="./img/image-jennie.jpg"
+            alt="Jennie F."
+            class="testimonial__image u-margin-bottom-medium"
+          />
+          <p class="testimonial__description u-margin-bottom-small">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div class="testimonial__author">
+            <p class="testimonial__author--name">Jennie F.</p>
+            <p class="testimonial__author--designation">Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="previews" class="previews">
+      <div class="preview preview--1"></div>
+      <div class="preview preview--2"></div>
+      <div class="preview preview--3"></div>
+      <div class="preview preview--4"></div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <h3 class="footer__heading u-margin-bottom-small">Sunnyside</h3>
+      <ul class="footer__items">
+        <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Services</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Projects</a>
+        </li>
+      </ul>
+
+      <ul class="footer__items">
+        <li class="footer__item">
+          <a
+            href="https://www.instagram.com/"
+            class="footer__link"
+            target="_blank"
+          >
+            <img
+              src="./img/icon/icon-instagram.svg"
+              alt="Instagram"
+              class="footer__icon"
+            />
+          </a>
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://www.facebook.com/"
+            class="footer__link"
+            target="_blank"
+            ><img
+              src="./img/icon/icon-facebook.svg"
+              alt="Facebook"
+              class="footer__icon"
+          /></a>
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://www.pinterest.com/"
+            class="footer__link"
+            target="_blank"
+          >
+            <img
+              src="./img/icon/icon-pinterest.svg"
+              alt="Pinterest"
+              class="footer__icon"
+            />
+          </a>
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://www.twitter.com/"
+            class="footer__link"
+            target="_blank"
+          >
+            <img
+              src="./img/icon/icon-twitter.svg"
+              alt="Twitter"
+              class="footer__icon"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
