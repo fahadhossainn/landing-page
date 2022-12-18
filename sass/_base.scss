@@ -10,7 +10,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding: 7rem;
+  scroll-padding: 5rem;
 }
 body {
   box-sizing: border-box;
@@ -55,6 +55,15 @@ body {
   text-align: center;
   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
   text-shadow: 0 1.1rem 2.1rem rgba(0, 0, 0, 0.2);
+
+  @include respond(tab-port) {
+    font-size: 2.8rem;
+  }
+  @include respond(phone) {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.4rem;
+  }
 }
 
 .heading--secondary {
@@ -103,4 +112,8 @@ body {
 .fixed {
   background-color: $color-tertiary-dark;
   color: $color-grey-dark-4;
+}
+.section__hidden {
+  opacity: 0;
+  transform: translateY(10rem);
 }

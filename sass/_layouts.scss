@@ -13,17 +13,19 @@
   @include respond(phone) {
     grid-template-columns: 1fr;
   }
+  transition: all 0.2s ease;
 }
 .testimonials {
   background-color: $color-grey-light-1;
   padding: 5rem 0;
+  transition: all 0.2s ease;
 }
 .previews {
   padding-top: 5rem;
   background-color: $color-grey-light-1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
+  transition: all 0.2s ease;
   @include respond(phone) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -33,4 +35,5 @@
   background-color: $color-tertiary-light;
   padding: 7rem 0 3rem 0;
   text-align: center;
+  transition: all 0.2s ease;
 }

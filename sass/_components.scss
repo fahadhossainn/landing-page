@@ -65,52 +65,32 @@
     cursor: pointer;
     position: relative;
     display: none;
+    margin: 0 0.4rem;
+    width: 25px;
+    height: 20px;
     z-index: 10000;
     @include respond(phone) {
-      display: block;
-    }
-    &--checkbox {
-      display: none;
-    }
-    &--label {
-      cursor: pointer;
+      display: inline-block;
     }
     &--span {
       position: relative;
+      display: block;
+      width: 20px;
+      height: 1.5px;
+      background-color: $color-grey-light-2;
+      transition: all 0.3s ease;
 
-      &,
-      &::before,
-      &::after {
-        display: inline-block;
-        width: 20px;
-        height: 2.1px;
-        background-color: $color-grey-light-2;
-        transition: all 0.2s;
-      }
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-      }
-      &::before {
-        top: -5px;
-      }
-      &::after {
-        top: 5px;
-      }
-    }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
-    &--checkbox:checked + &--label &--span {
-      background: transparent;
-    }
-    &--checkbox:checked + &--label &--span::before {
-      top: 0;
-      transform: rotate(135deg);
-    }
-    &--checkbox:checked + &--label &--span::after {
-      top: 0;
-      transform: rotate(-135deg);
+      &-top {
+        top: 6px;
+      }
+      &-bottom {
+        top: 14px;
+      }
     }
   }
 }
@@ -126,14 +106,21 @@
   justify-content: center;
   align-items: center;
   list-style: none;
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary-light,
-    $color-primary-dark
-  );
+  background-color: $color-tertiary-dark;
   z-index: 10;
 }
-
+.hamburger .navbar__toggle--span-top {
+  left: 0;
+  top: 14px;
+  transform: rotate(135deg);
+}
+.hamburger .navbar__toggle--span-middle {
+  background: transparent;
+}
+.hamburger .navbar__toggle--span-bottom {
+  left: 0;
+  transform: rotate(-135deg);
+}
 .btn--text {
   &:link,
   &:visited {
